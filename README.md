@@ -44,29 +44,30 @@ Our last task was to create a Postgres Database using the four CSV files we prev
 
 ### Below are screen shots with descriptions showing our process and outcomes:
 
-![ERD](ERD.png)\
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/4a3aa065-5d34-4d38-b130-5bf3e2e467a0)\
 This is the ERD we created using QuickDBD.
 
 ----
 
-![Schema](<Screenshot 2024-03-21 184115.png>)\
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/be0d6426-1d74-4c26-b2fe-d957d0a2aa1b)\
 Here you can see the start of our schema created by exporting the ERD data to PostgreSQL. *Note: The full scheme can be found in our repository: crowdfunding_db_schema.sql*
 
 ----
 
-![Database](<Screenshot 2024-03-21 184256.png>)
-![campaign table](<Screenshot 2024-03-21 184359.png>)
-![category table](<Screenshot 2024-03-21 184456.png>)
-![contact table](<Screenshot 2024-03-21 185000.png>)
-![subcategory table](<Screenshot 2024-03-21 185037.png>)\
+
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/9cd74d35-4461-4982-ae31-93811b434435)
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/72f19d9b-72d2-409e-bce8-c4dca7ba0a03)
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/75bfed14-8163-4018-8ac0-6dc5e771f2a2)
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/4d73ed92-68e0-4c30-a4a0-f09df566d3f9)
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/80ffd169-9974-4685-bed2-523183edb706)\
 We created the database and them ran the schema to create the 4 tables.
 
 ----
 
-![campaign](<Screenshot 2024-03-21 185543.png>)
-![contacts](<Screenshot 2024-03-21 185644.png>)
-![subcategory](<Screenshot 2024-03-21 185829.png>)
-![category](<Screenshot 2024-03-21 185744.png>)\
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/69f00738-3cdd-4aa2-9f47-4704e2856efa)
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/841be032-4891-4afd-8df7-4f66bc17f4e8)
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/3ac9eeed-773e-4229-aafc-86a71fdcc74a)
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/e96db88e-3495-496f-8ba8-4a9128f91ab7)\
 We imported each CSV and used SELECT * FROM <table_name> to view the 4 tables and the corresponding data.
 
 -------
