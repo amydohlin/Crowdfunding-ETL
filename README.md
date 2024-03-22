@@ -54,7 +54,7 @@ Here you can see the start of our schema created by exporting the ERD data to Po
 
 ----
 
-![Database](<Screenshot 2024-03-21 184256-2.png>)
+![Database](<Screenshot 2024-03-21 184256.png>)
 ![campaign table](<Screenshot 2024-03-21 184359.png>)
 ![category table](<Screenshot 2024-03-21 184456.png>)
 ![contact table](<Screenshot 2024-03-21 185000.png>)
@@ -65,8 +65,8 @@ We created the database and them ran the schema to create the 4 tables.
 
 ![campaign](<Screenshot 2024-03-21 185543.png>)
 ![contacts](<Screenshot 2024-03-21 185644.png>)
-![category](<Screenshot 2024-03-21 185744.png>)
-![subcategory](<Screenshot 2024-03-21 185829.png>)\
+![subcategory](<Screenshot 2024-03-21 185829.png>)
+![category](<Screenshot 2024-03-21 185744.png>)\
 We imported each CSV and used SELECT * FROM <table_name> to view the 4 tables and the corresponding data.
 
 -------
