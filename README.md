@@ -28,17 +28,46 @@ Furthermore, we noticed the contact info was stored as a JSON dictionary in each
 The next step was to iterate through each row of the df using a for loop and the .iterrows() function, and assigning the variable data as row[0]. Next we converted each row into a Python dictionary by using the json.loads() function. Then we used list comprehensions to separate the keys and values into their respective dictionaries by inputting:
   * cols = [k for k,v in converted_data.items()]
   * dict_values = [v for k,v in converted_data.items()]
+
 The last step in the iteration process was to append these to their respective col_names and values lists.
 
 Once we had our lists we converted them into a Pandas df using pd.DataFrame(values, columns= col_names[0]), where the [0] indicates the columns as the header row. Putting the lists into a df allowed us to check the data type for each value and decide whether the data types needed to be adjusted (in this case, they did not). The next step was to separate the first and last names into their own columns. This required us to apply regular expressions to extract what exactly we needed. To accomplish this we used .str.extract() with the following expressions:
   * '(\w+)(?:\s)' for the first names, where it specifies that we want any text up to but not including the white space and subsequent characters;
   * '(?:\s)(\w+)' for the last names, where it specifies that we only want any text after the white space.
-This resulted in the first_name and last_name columns, and allowed us to drop the name column. 
 
+This resulted in the first_name and last_name columns, and allowed us to drop the name column. 
 The last step was to reorder the columns as contact_id, first_name, last_name, email, and then export the df to a CSV (contacts.csv).
+
 ---------
 ## Database
 Our last task was to create a Postgres Database using the four CSV files we previously exported. We started by using QuickDBD to create a schema for the four tables. We then determined our Primary and Foreign keys and connected the tables accordingly. This schema was then exported to a PostgreSQL file. In pgAdmin we created a new database called crowdfunding_db and imported the schema file to create our tables. The next step was to import the tables in the following order: ‘contacts’, ‘category’, ‘subcategory’ and finally ‘campaign’. This allowed for the campaign file, which held the foreign keys, to import properly in relation to the other three tables. Lastly, we checked that all tables were created correctly and had the proper data by running the SELECT * FROM <table_name> command for each table.
+
+### Below are screen shots with descriptions showing our process and outcomes:
+
+![ERD](ERD.png)\
+This is the ERD we created using QuickDBD.
+
+----
+
+![Schema](<Screenshot 2024-03-21 184115.png>)\
+Here you can see the start of our schema created by exporting the ERD data to PostgreSQL. *Note: The full scheme can be found in our repository: crowdfunding_db_schema.sql*
+
+----
+
+![Database](<Screenshot 2024-03-21 184256-2.png>)
+![campaign table](<Screenshot 2024-03-21 184359.png>)
+![category table](<Screenshot 2024-03-21 184456.png>)
+![contact table](<Screenshot 2024-03-21 185000.png>)
+![subcategory table](<Screenshot 2024-03-21 185037.png>)\
+We created the database and them ran the schema to create the 4 tables.
+
+----
+
+![campaign](<Screenshot 2024-03-21 185543.png>)
+![contacts](<Screenshot 2024-03-21 185644.png>)
+![category](<Screenshot 2024-03-21 185744.png>)
+![subcategory](<Screenshot 2024-03-21 185829.png>)\
+We imported each CSV and used SELECT * FROM <table_name> to view the 4 tables and the corresponding data.
 
 -------
 ## Summary
