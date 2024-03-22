@@ -49,13 +49,12 @@ This is the ERD we created using QuickDBD.
 
 ----
 
-![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/be0d6426-1d74-4c26-b2fe-d957d0a2aa1b)\
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/70cb8df8-2f13-47da-9cb2-65c57af26bdb)\
 Here you can see the start of our schema created by exporting the ERD data to PostgreSQL. *Note: The full scheme can be found in our repository: crowdfunding_db_schema.sql*
 
 ----
 
-
-![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/9cd74d35-4461-4982-ae31-93811b434435)
+![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/8c2f887a-8d5f-4691-bf1e-e40f25434e63)
 ![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/72f19d9b-72d2-409e-bce8-c4dca7ba0a03)
 ![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/75bfed14-8163-4018-8ac0-6dc5e771f2a2)
 ![image](https://github.com/amydohlin/Crowdfunding-ETL/assets/149394665/4d73ed92-68e0-4c30-a4a0-f09df566d3f9)
