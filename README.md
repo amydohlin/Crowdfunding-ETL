@@ -78,3 +78,6 @@ We imported each CSV and used SELECT * FROM <table_name> to view the 4 tables an
 
 --------
 ## References and Sources
+* Module 13 Activities
+* Xpert Learning Assistant
+* TAs/Office Hours
